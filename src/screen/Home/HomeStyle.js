@@ -1,0 +1,213 @@
+import {StyleSheet} from 'react-native';
+import {Colors, Fonts} from '../../global';
+import {widthToDp} from '../../global/Constant';
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  mainView: {
+    padding: 20,
+  },
+  ProfileSectionView: {
+    flexDirection: 'row',
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    backgroundColor: Colors.LEMONGREEN,
+    padding: 5,
+    paddingVertical: 10,
+  },
+  profileNameImageView: {
+    justifyContent: 'center',
+    borderRightWidth: 0.5,
+    borderRightColor: Colors.GREY,
+    alignItems: 'center',
+    width: '50%',
+  },
+  weightLossSectionView: {
+    padding: 10,
+    alignItems: 'center',
+    width: '50%',
+  },
+  ImageStyle: {
+    height: 80,
+    width: 80,
+    // resizeMode:"center",
+    borderRadius: 100,
+    borderColor: Colors.LITEGREEN,
+    borderWidth: 2,
+  },
+  profileNameText: {
+    fontSize: 9,
+    fontFamily: Fonts.BOLD,
+  },
+  weightTitleText: {
+    fontSize: 9,
+    fontFamily: Fonts.BOLD,
+    textAlign: 'center',
+    marginBottom: 10,
+  },
+  profileSectionButton: {
+    borderColor: Colors.LITEGREEN,
+    padding: 5,
+    borderWidth: 1,
+    borderRadius: 5,
+  },
+  ProfilePerformanceText: {
+    fontSize: widthToDp(0.9),
+    fontFamily: Fonts.REGULAR,
+    color: Colors.LITEGREEN,
+    marginVertical: 5,
+  },
+  toGoalText: {
+    fontSize: 6,
+    fontFamily: Fonts.BOLD,
+  },
+  performanceView: {
+    borderWidth: 0.8,
+    borderColor: Colors.LITEGREEN,
+    borderRadius: 100,
+  },
+  InnerBorderView: {
+    borderColor: Colors.LEMONGREEN,
+    backgroundColor: Colors.WHITE,
+    borderWidth: 4,
+    height: 70,
+    width: 70,
+    padding: 5,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 100,
+  },
+  performancePercentage: {
+    fontFamily: Fonts.BOLD,
+    fontSize: 11,
+    color: Colors.LITEGREEN,
+  },
+  profileSectionButtonText: {
+    fontSize: 8,
+    textAlign: 'center',
+    padding: 5,
+    color: Colors.LITEGREEN,
+    fontFamily: Fonts.SEMI_BOLD,
+  },
+  weightLossSection: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    backgroundColor: Colors.WHITE,
+    borderBottomLeftRadius: 10,
+    padding: 5,
+    borderBottomRightRadius: 10,
+  },
+  weightLossToDateText: {
+    fontFamily: Fonts.SEMI_BOLD,
+    fontSize: 12,
+    padding: 5,
+  },
+  weightlossText: {
+    fontFamily: Fonts.SEMI_BOLD,
+    color: Colors.LITEGREEN,
+    fontSize: 12,
+    padding: 5,
+  },
+  lbsPoundsText: {
+    fontFamily: Fonts.SEMI_BOLD,
+    color: Colors.LITEGREEN,
+    fontSize: 8,
+    marginBottom: 10,
+    textAlign: 'right',
+  },
+
+  averageFastimeSection: {
+    marginTop: 20,
+  },
+  averageFastimeTextView: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 20,
+    borderTopRightRadius: 10,
+    borderTopLeftRadius: 10,
+    backgroundColor: Colors.LITEPINK,
+  },
+  resetButtonStyle: {
+    backgroundColor: Colors.ORANGE,
+    padding: 5,
+    paddingHorizontal: 15,
+    borderRadius: 5,
+  },
+  buttonTextStyle: {
+    color: Colors.WHITE,
+  },
+  averageFastimeText: {
+    color: Colors.BLACK,
+    fontFamily: Fonts.BOLD,
+    paddingVertical: 10,
+  },
+  averageFastimeClock: {
+    borderBottomRightRadius: 10,
+    padding: 5,
+    paddingVertical: 30,
+    borderBottomLeftRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#fffbf7',
+  },
+  clockViewStyle: {
+    height: 220,
+    alignSelf: 'center',
+    width: 220,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  weightDiarySection: {
+    marginTop: 20,
+  },
+  weightDiarySectionTextView: {
+    borderTopRightRadius: 10,
+    borderTopLeftRadius: 10,
+    backgroundColor: '#f7fbe4',
+    padding: 10,
+    paddingHorizontal: 20,
+  },
+  weightDiaryText: {
+    color: Colors.BLACK,
+    fontFamily: Fonts.BOLD,
+    paddingVertical: 10,
+  },
+  weightDiaryChart: {
+    backgroundColor: '#fdfff4',
+    borderBottomRightRadius: 10,
+    borderBottomLeftRadius: 10,
+    padding: 5,
+  },
+  dropDownScrollView: {
+    position: 'absolute',
+    zIndex: 100,
+    right: 10,
+    borderWidth: 0.5,
+    paddingHorizontal: 10,
+    padding: 3,
+    borderRadius: 10,
+    backgroundColor: Colors.WHITE,
+    height: 100,
+  },
+  dropDownStyle: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 0.2,
+    paddingHorizontal: 10,
+    padding: 3,
+    borderRadius: 10,
+  },
+  dropDownItemView: {
+    paddingBottom: 5,
+    alignItems: 'center',
+  },
+  selectedViewText: {
+    fontFamily: Fonts.REGULAR,
+    marginRight: 10,
+  },
+});

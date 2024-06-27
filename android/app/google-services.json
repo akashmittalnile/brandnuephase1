@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "824207574439",
+    "project_id": "brandnue-bcfc6",
+    "storage_bucket": "brandnue-bcfc6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824207574439:android:5d3e976bdc0987cc886282",
+        "android_client_info": {
+          "package_name": "com.brandnue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "824207574439-2l81tkllmmesnjsa0apmc7erd33sj1de.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG5I7_ZPms7kCWVEBQO8rnlCXW8l1SJaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "824207574439-2l81tkllmmesnjsa0apmc7erd33sj1de.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

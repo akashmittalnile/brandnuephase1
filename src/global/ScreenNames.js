@@ -1,0 +1,86 @@
+export const MAIN_STACK = 'MAIN_STACK';
+
+export const BOTTOM_TAB = 'BOTTOM_TAB';
+
+export const SPLASH = 'SPLASH';
+
+export const WELCOME = 'WELCOME';
+
+export const SIGNIN = 'SIGNIN';
+
+export const SIGNUP = 'SIGNUP';
+export const SIGNUP_WELCOME = 'SIGNUP_WELCOME';
+export const BASIC_SIGNUP = `BASIC_SIGNUP`;
+export const METRIC_SIGNUP = 'METRIC_SIGNUP';
+export const WAIST_SIGNUP = 'WAIST_SIGNUP';
+export const CURRENT_STATUS_SIGNUP = 'CURRENT_STATUS_SIGNUP';
+export const HEALTH_CONCERN_SIGNUP = 'HEALTH_CONCERN_SIGNUP';
+export const CURRENT_MOTIVATION_SIGNUP = 'CURRENT_MOTIVATION_SIGNUP';
+export const PRE_DIET = 'PRE_DIET';
+export const DID_NOT_WORK = 'DID_NOT_WORK';
+export const PERSONAL_NEED = 'PERSONAL_NEED';
+export const METABOLISM = 'METABOLISM';
+export const LAST_QUESTION = 'LAST_QUESTION';
+export const SIGN_UP_SUCCESS = 'SIGN_UP_SUCCESS';
+export const MEMBERSHIP_SIGNUP = 'MEMBERSHIP_SIGNUP';
+export const SHIPPING_ADDRESS = 'SHIPPING_ADDRESS';
+export const CHOOSE_PLAN = 'CHOOSE_PLAN';
+export const PLAN_PREVIEW = 'PLAN_PREVIEW';
+
+export const HOME = 'HOME';
+
+export const MEMBERSHIP_PLAN = 'MEMBERSHIP_PLAN';
+
+export const PLAN_PAYMENT = 'PLAN_PAYMENT';
+
+export const VIEW_PLAN = 'VIEW_PLAN';
+
+export const NOTIFICATION = 'NOTIFICATION';
+
+export const NOTIFICATION_DETAIL = 'NOTIFICATION_DETAIL';
+
+export const DIGITAL_LIBRARY = 'DIGITAL_LIBRARY';
+
+export const DIGITAL_LIBRARY_ITEM = 'DIGITAL_LIBRARY_ITEM';
+
+export const DIGITAL_LIBRARY_ITEMS = 'DIGITAL_LIBRARY_ITEMS';
+
+export const ITEM_LISTING = 'ITEM_LISTING';
+
+export const ITEM_DETAIL = 'ITEM_DETAIL';
+
+export const DETAIL_SCREEN = 'DETAIL_SCREEN';
+
+export const ADDED_MEALS = 'ADDED_MEALS';
+
+export const FAVOURITE_MEALS = 'FAVOURITE_MEALS';
+
+export const ONLINE_STORE = 'ONLINE_STORE';
+
+export const DAILY_TRACKING = 'DAILY_TRACKING';
+
+export const TRACKER_REPORT = 'TRACKER_REPORT';
+
+export const EDIT_DAILY_TRACKING = 'EDIT_DAILY_TRACKING';
+
+export const MY_PROFILE = 'MY_PROFILE';
+
+export const CHAT_NOW = 'CHAT_NOW';
+
+export const FULL_IMAGE_VIEW = 'FULL_IMAGE_VIEW';
+
+export const ELITE_MEMBERSHIP = 'ELITE_MEMBERSHIP';
+
+export const NO_CONNECTION = 'NO_CONNECTION';
+
+export const DASHBOARD = 'DASHBOARD';
+
+export const CHAT_MEMBER = 'CHAT_MEMBER';
+
+export const ADMIN_CHAT_NOW = 'ADMIN_CHAT_NOW';
+
+export const VIEW_PDF = 'VIEW_PDF';
+
+export const TRACKING_SHEET = 'TRACKING_SHEET';
+
+export const EDIT_PROFILE = 'EDIT_PROFILE';
