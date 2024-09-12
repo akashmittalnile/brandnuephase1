@@ -9,20 +9,20 @@ import {
   Image,
 } from 'react-native';
 //import : custom components
-import SimpleHeader from 'components/SimpleHeader/SimpleHeader';
-import SignUpTracker from 'components/SignUpTracker/SignUpTracker';
-import CustomSlider from 'components/CustomSlider/CustomSlider';
-import MyButton from 'components/MyButton/MyButton';
-import CustomLoader from 'components/CustomLoader/CustomLoader';
+import SimpleHeader from '../../../components/SimpleHeader/SimpleHeader';
+import SignUpTracker from '../../../components/SignUpTracker/SignUpTracker';
+import CustomSlider from '../../../components/CustomSlider/CustomSlider';
+import MyButton from '../../../components/MyButton/MyButton';
+import CustomLoader from '../../../components/CustomLoader/CustomLoader';
 //import : third parties
 import Toast from 'react-native-simple-toast';
 //import : utils
-import {Colors, Constant, MyIcon, ScreenNames, Server} from 'global/index';
+import {Colors, Constant, MyIcon, ScreenNames, Server} from '../../../global/index';
 //import : styles
 import {styles} from './MetricSignUpStyle';
 //import : redux
 import {useDispatch, useSelector} from 'react-redux';
-import {CustomAlertAction} from 'reduxtoolkit/actions/actions';
+import {CustomAlertAction} from '../../../redux/actions/actions';
 
 const MetricSignUp = ({navigation, route}) => {
   //variables : redux
@@ -33,12 +33,12 @@ const MetricSignUp = ({navigation, route}) => {
     {
       id: 1,
       name: 'Male',
-      img: require('assets/Images/male.png'),
+      img: require('../../../assets/Images/male.png')
     },
     {
       id: 2,
       name: 'Female',
-      img: require('assets/Images/female.png'),
+      img: require('../../../assets/Images/female.png')
     },
   ];
   //hook : states

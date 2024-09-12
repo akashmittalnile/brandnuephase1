@@ -1,0 +1,6 @@
+module Pods_brandnue_brandnueTests {
+  umbrella header "Pods-brandnue-brandnueTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

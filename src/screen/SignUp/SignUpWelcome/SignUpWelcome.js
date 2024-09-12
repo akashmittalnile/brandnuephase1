@@ -9,7 +9,7 @@ import MyButton from '../../../components/MyButton/MyButton';
 import {Colors, ScreenNames} from '../../../global';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {useDispatch} from 'react-redux';
-import {CustomAlertAction, UserAction} from 'reduxtoolkit/actions/actions';
+import {CustomAlertAction, UserAction} from '../../../redux/actions/actions';
 
 const SignUpWelcome = ({navigation}) => {
   //variables : redux

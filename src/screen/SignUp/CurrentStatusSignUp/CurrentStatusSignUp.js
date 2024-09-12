@@ -2,10 +2,10 @@
 import React, {useState, useEffect} from 'react';
 import {View, Text, FlatList, TouchableOpacity, Image} from 'react-native';
 //import : custom components
-import SimpleHeader from 'components/SimpleHeader/SimpleHeader';
-import SignUpTracker from 'components/SignUpTracker/SignUpTracker';
-import MyButton from 'components/MyButton/MyButton';
-import CustomLoader from 'components/CustomLoader/CustomLoader';
+import SimpleHeader from '../../../components/SimpleHeader/SimpleHeader';
+import SignUpTracker from '../../../components/SignUpTracker/SignUpTracker';
+import MyButton from '../../../components/MyButton/MyButton';
+import CustomLoader from '../../../components/CustomLoader/CustomLoader';
 //import : third parties
 import Toast from 'react-native-simple-toast';
 //import : utils
@@ -16,7 +16,7 @@ import {
   MyIcon,
   ScreenNames,
   Server,
-} from 'global/index';
+} from '../../../global/index';
 //import : styles
 import {styles} from './CurrentStatusSignUpStyle';
 //import : redux

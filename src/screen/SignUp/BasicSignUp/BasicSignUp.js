@@ -2,24 +2,25 @@
 import React, {useState} from 'react';
 import {View, Text, TouchableOpacity, Linking, Image,Platform} from 'react-native';
 //import : custom components
-import TextInputArea from 'components/TextInputArea/TextInputArea';
-import SimpleHeader from 'components/SimpleHeader/SimpleHeader';
-import MyButton from 'components/MyButton/MyButton';
-import CustomLoader from 'components/CustomLoader/CustomLoader';
+import TextInputArea from '../../../components/TextInputArea/TextInputArea';
+import SimpleHeader from '../../../components/SimpleHeader/SimpleHeader';
+import MyButton from '../../../components/MyButton/MyButton';
+import CustomLoader from '../../../components/CustomLoader/CustomLoader';
 //import : third parties
 import DatePicker from 'react-native-date-picker';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import moment from 'moment';
 import Toast from 'react-native-simple-toast';
 //import : utils
-import {Colors, Constant, MyIcon, ScreenNames, Server} from 'global/index';
+import {Colors, Constant, MyIcon, ScreenNames, Server} from '../../../global/index';
 //import : styles
 import {styles} from './BasicSignUpStyle';
 //import : modal
-import AlreadySignIn from 'modals/AlreadySignIn/AlreadySignIn';
+import AlreadySignIn from '../../../modals/AlreadySignIn/AlreadySignIn';
 //import : redux
 import {useDispatch} from 'react-redux';
-import {CustomAlertAction, UserAction} from 'reduxtoolkit/actions/actions';
+import {CustomAlertAction, UserAction} from '../../../redux/actions/actions';
+// import {CustomAlertAction, UserAction} from 'reduxtoolkit/actions/actions';
 import DateTimePicker from '@react-native-community/datetimepicker';
 
 const BasicSignUp = ({navigation}) => {
@@ -168,7 +169,7 @@ const BasicSignUp = ({navigation}) => {
             <Text style={{color: Colors.GREY}}>
               {dob == '' ? 'DOB' : moment(dob).format('LL')}
             </Text>
-            <Image source={require('assets/Images/Calendar.png')} />
+            <Image source={require('../../../assets/Images/Calendar.png')} />
           </TouchableOpacity>
           <TextInputArea
             placeholder={'State'}

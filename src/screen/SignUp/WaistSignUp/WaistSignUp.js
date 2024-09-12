@@ -2,22 +2,22 @@
 import React, {useState} from 'react';
 import {View, Text, Image, TouchableOpacity} from 'react-native';
 //import : custom components
-import SimpleHeader from 'components/SimpleHeader/SimpleHeader';
-import SignUpTracker from 'components/SignUpTracker/SignUpTracker';
-import TextInputArea from 'components/TextInputArea/TextInputArea';
-import MyButton from 'components/MyButton/MyButton';
+import SimpleHeader from '../../../components/SimpleHeader/SimpleHeader';
+import SignUpTracker from '../../../components/SignUpTracker/SignUpTracker';
+import TextInputArea from '../../../components/TextInputArea/TextInputArea';
+import MyButton from '../../../components/MyButton/MyButton';
 //import : third parties
 import Toast from 'react-native-simple-toast';
 //import : utils
-import {Colors, ScreenNames, Server} from 'global/index';
+import {Colors, ScreenNames, Server} from '../../../global/index';
 //import : styles
 import {styles} from './WaistSignUpStyle';
-import HowToMeasure from 'components/modal/HowToMeasure/HowToMeasure';
+import HowToMeasure from '../../../components/modal/HowToMeasure/HowToMeasure';
 //import : redux
 import {useDispatch, useSelector} from 'react-redux';
-import {CustomAlertAction, UserAction} from 'reduxtoolkit/actions/actions';
+import {CustomAlertAction, UserAction} from '../../../redux/actions/actions';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
-import CustomLoader from 'components/CustomLoader/CustomLoader';
+import CustomLoader from '../../../components/CustomLoader/CustomLoader';
 
 const WaistSignUp = ({navigation, route}) => {
   //variables
@@ -72,7 +72,7 @@ const WaistSignUp = ({navigation, route}) => {
       <KeyboardAwareScrollView style={styles.mainView}>
         <View>
           <Image
-            source={require('assets/Images/waist_signup.png')}
+            source={require('../../../assets/Images/waist_signup.png')}
             style={{alignSelf: 'center'}}
           />
           <TouchableOpacity onPress={() => setShowHowToMeasure(true)}>

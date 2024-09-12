@@ -22,7 +22,7 @@ import PlusSvg from '../../assets/svg/plus.svg';
 import {connect} from 'react-redux';
 import {CustomAlertAction} from '../../redux/actions/actions';
 import DateTimePicker from '@react-native-community/datetimepicker';
-import { postAPI } from 'global/Server';
+import { postAPI } from '../../global/Server';
 import { color } from 'react-native-reanimated';
 
 const TrackerReport = ({navigation, userToken, dispatch, route}) => {

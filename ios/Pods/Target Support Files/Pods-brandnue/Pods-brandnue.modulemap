@@ -1,0 +1,6 @@
+module Pods_brandnue {
+  umbrella header "Pods-brandnue-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -41,21 +41,21 @@ import TrackingSheet from '../../screen/TrackingSheet/TrackingSheet';
 import EditProfile from '../../screen/EditProfile/EditProfile';
 import SignUpWelcome from '../../screen/SignUp/SignUpWelcome/SignUpWelcome';
 import BasicSignUp from '../../screen/SignUp/BasicSignUp/BasicSignUp';
-import MetricSignUp from 'src/screen/SignUp/MetricSignUp/MetricSignUp';
-import WaistSignUp from 'src/screen/SignUp/WaistSignUp/WaistSignUp';
-import CurrentStatusSignUp from 'src/screen/SignUp/CurrentStatusSignUp/CurrentStatusSignUp';
-import HealthConcern from 'src/screen/SignUp/HealthConcern/HealthConcern';
-import CurrentMotivation from 'src/screen/SignUp/CurrentMotivation/CurrentMotivation';
-import PreDiet from 'src/screen/SignUp/PreDiet/PreDiet';
-import DidNotWork from 'src/screen/SignUp/DidNotWork/DidNotWork';
-import PersonalNeed from 'src/screen/SignUp/PersonalNeed/PersonalNeed';
-import Metabolism from 'src/screen/SignUp/Metabolism/Metabolism';
-import LastQuestion from 'src/screen/SignUp/LastQuestion/LastQuestion';
-import SignUpSuccess from 'src/screen/SignUp/SignUpSuccess/SignUpSuccess';
-import MemberShipSignUp from 'src/screen/SignUp/MemberShipSignUp/MemberShipSignUp';
-import ShippingAddress from 'src/screen/SignUp/ShippingAddress/ShippingAddress';
-import ChoosePlan from 'src/screen/SignUp/ChoosePlan/ChoosePlan';
-import PlanPreview from 'src/screen/SignUp/PlanPreview/PlanPreview';
+import MetricSignUp from '../../screen/SignUp/MetricSignUp/MetricSignUp';
+import WaistSignUp from '../../screen/SignUp/WaistSignUp/WaistSignUp';
+import CurrentStatusSignUp from '../../screen/SignUp/CurrentStatusSignUp/CurrentStatusSignUp';
+import HealthConcern from '../../screen/SignUp/HealthConcern/HealthConcern';
+import CurrentMotivation from '../../screen/SignUp/CurrentMotivation/CurrentMotivation';
+import PreDiet from '../../screen/SignUp/PreDiet/PreDiet';
+import DidNotWork from '../../screen/SignUp/DidNotWork/DidNotWork';
+import PersonalNeed from '../../screen/SignUp/PersonalNeed/PersonalNeed';
+import Metabolism from '../../screen/SignUp/Metabolism/Metabolism';
+import LastQuestion from '../../screen/SignUp/LastQuestion/LastQuestion';
+import SignUpSuccess from '../../screen/SignUp/SignUpSuccess/SignUpSuccess';
+import MemberShipSignUp from '../../screen/SignUp/MemberShipSignUp/MemberShipSignUp';
+import ShippingAddress from '../../screen/SignUp/ShippingAddress/ShippingAddress';
+import ChoosePlan from '../../screen/SignUp/ChoosePlan/ChoosePlan';
+import PlanPreview from '../../screen/SignUp/PlanPreview/PlanPreview';
 
 const MainStack = () => {
   //variables
