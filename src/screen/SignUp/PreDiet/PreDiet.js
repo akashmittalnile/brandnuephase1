@@ -2,20 +2,20 @@
 import React, {useState, useEffect} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 //import : custom components
-import SimpleHeader from 'components/SimpleHeader/SimpleHeader';
-import SignUpTracker from 'components/SignUpTracker/SignUpTracker';
-import SizedBox from 'components/SizedBox/SizedBox';
-import MyButton from 'components/MyButton/MyButton';
-import CustomLoader from 'components/CustomLoader/CustomLoader';
+import SimpleHeader from '../../../components/SimpleHeader/SimpleHeader';
+import SignUpTracker from '../../../components/SignUpTracker/SignUpTracker';
+import SizedBox from '../../../components/SizedBox/SizedBox';
+import MyButton from '../../../components/MyButton/MyButton';
+import CustomLoader from '../../../components/CustomLoader/CustomLoader';
 //import : third parties
 import Toast from 'react-native-simple-toast';
 //import : utils
-import {Colors, Fonts, MyIcon, ScreenNames, Server} from 'global/index';
+import {Colors, Fonts, MyIcon, ScreenNames, Server} from '../../../global/index';
 // import : styles
 import {styles} from './PreDietStyle';
 //import : redux
 import {useDispatch} from 'react-redux';
-import {CustomAlertAction} from 'reduxtoolkit/actions/actions';
+import {CustomAlertAction} from '../../../redux/actions/actions';
 
 const PreDiet = ({navigation, route}) => {
   //variables : route

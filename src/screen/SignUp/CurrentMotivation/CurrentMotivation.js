@@ -2,19 +2,19 @@
 import React, {useState} from 'react';
 import {View, Text, Image} from 'react-native';
 //import : custom components
-import SimpleHeader from 'components/SimpleHeader/SimpleHeader';
-import CustomSlider from 'components/CustomSlider/CustomSlider';
-import MyButton from 'components/MyButton/MyButton';
-import SignUpTracker from 'components/SignUpTracker/SignUpTracker';
-import CustomLoader from 'components/CustomLoader/CustomLoader';
+import SimpleHeader from '../../../components/SimpleHeader/SimpleHeader';
+import CustomSlider from '../../../components/CustomSlider/CustomSlider';
+import MyButton from '../../../components/MyButton/MyButton';
+import SignUpTracker from '../../../components/SignUpTracker/SignUpTracker';
+import CustomLoader from '../../../components/CustomLoader/CustomLoader';
 //import : third parties
 import Toast from 'react-native-simple-toast';
 //import : utils
-import {Colors, ScreenNames, Server} from 'global/index';
+import {Colors, ScreenNames, Server} from '../../../global/index';
 //import : styles
 import {styles} from './CurrentMotivationStyle';
 import {useDispatch} from 'react-redux';
-import {CustomAlertAction} from 'reduxtoolkit/actions/actions';
+import {CustomAlertAction} from '../../../redux/actions/actions';
 
 const CurrentMotivation = ({navigation, route}) => {
   //variables : route
@@ -63,7 +63,7 @@ const CurrentMotivation = ({navigation, route}) => {
       <View style={styles.mainView}>
         <Text style={styles.title}>How badly do you want to lose weight?</Text>
         <Image
-          source={require('assets/Images/currentMotivation.png')}
+          source={require('../../../assets/Images/currentMotivation.png')}
           style={{alignSelf: 'center'}}
         />
         <CustomSlider

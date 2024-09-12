@@ -2,11 +2,11 @@
 import React, {useState, useEffect} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 //import : custom components
-import SimpleHeader from 'components/SimpleHeader/SimpleHeader';
-import SignUpTracker from 'components/SignUpTracker/SignUpTracker';
-import SizedBox from 'components/SizedBox/SizedBox';
-import MyButton from 'components/MyButton/MyButton';
-import CustomLoader from 'components/CustomLoader/CustomLoader';
+import SimpleHeader from '../../../components/SimpleHeader/SimpleHeader';
+import SignUpTracker from '../../../components/SignUpTracker/SignUpTracker';
+import SizedBox from '../../../components/SizedBox/SizedBox';
+import MyButton from '../../../components/MyButton/MyButton';
+import CustomLoader from '../../../components/CustomLoader/CustomLoader';
 //import : third parties
 import Toast from 'react-native-simple-toast';
 //import : utils

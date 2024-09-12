@@ -21,7 +21,7 @@ import {
 import {styles} from './CurrentStatusSignUpStyle';
 //import : redux
 import {useDispatch} from 'react-redux';
-import {CustomAlertAction} from 'reduxtoolkit/actions/actions';
+import {CustomAlertAction} from '../../../redux/actions/actions';
 
 const CurrentStatusSignUp = ({navigation, route}) => {
   //variables

@@ -33,12 +33,12 @@ const MetricSignUp = ({navigation, route}) => {
     {
       id: 1,
       name: 'Male',
-      img: require('../../../assets/Images/male.png')
+      // img: require('../../../assets/Images/male.png')
     },
     {
       id: 2,
       name: 'Female',
-      img: require('../../../assets/Images/female.png')
+      // img: require('../../../assets/Images/female.png')
     },
   ];
   //hook : states
@@ -127,10 +127,10 @@ const MetricSignUp = ({navigation, route}) => {
                     borderRadius: 15,
                     margin: 2,
                   }}>
-                  <Image 
-                  // source={require('../../../assets/Images/male.png')} 
-                  source={item.img} 
-                  />
+                  {/* <Image 
+                  source={require('../../../assets/Images/male.png')} 
+                  // source={item.img} 
+                  /> */}
                   {selectedGender.id == item.id && (
                     <View style={{position: 'absolute', top: 10, right: 10}}>
                       <MyIcon.AntDesign
