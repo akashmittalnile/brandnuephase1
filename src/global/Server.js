@@ -252,6 +252,8 @@ export const postApiWithToken = (token, endPoint, data) =>
       },
     })
     .then(res => {
+      console.log('postApiWithToken endPoint',res.data, endPoint, {token});
+      
       return res;
     })
     .catch(error => {
@@ -261,7 +263,7 @@ export const postApiWithToken = (token, endPoint, data) =>
           `Internet connection appears to be offline. Please check your internet connection and try again.`,
         );
       }
-      console.log('data', error.response.data);
+      console.log('datacheck', error.response.data);
       console.log('status', error.response.status);
       console.log('headers', error.response.headers);
       return error;

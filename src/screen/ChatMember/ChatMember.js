@@ -44,6 +44,8 @@ const ChatMember = ({userToken, navigation}) => {
             userToken,
           );
           if (status) {
+            console.log(JSON.stringify(response.data?.slice(0,10)));
+            
             setUserData(response.data);
             setUsers(response.data);
             setshowLoader(false);

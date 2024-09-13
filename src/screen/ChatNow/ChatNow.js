@@ -121,6 +121,9 @@ const ChatNow = ({userToken, navigation, dispatch}) => {
               receiver_id: adminId,
               msg: tempMsg,
             };
+
+            console.log("sendMessagedata", data);
+            
             await Server.postApiWithToken(userToken, Server.SEND_MSG, data);
           } catch (error) {
             console.log('error while api call ', error);

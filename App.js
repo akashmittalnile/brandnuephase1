@@ -133,7 +133,7 @@ const App = () => {
     <SafeAreaView style={{flex: 1}}>
       <Provider store={store}>
         <NavigationContainer theme={DefaultTheme}>
-          <StatusBar translucent={false} backgroundColor="#FFFFFF" />
+          {/* <StatusBar translucent={false} backgroundColor="#FFFFFF" /> */}
           <Drawer />
         </NavigationContainer>
       </Provider>

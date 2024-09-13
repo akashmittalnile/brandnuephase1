@@ -1,5 +1,5 @@
 //react components
-import React, {useRef, useState, useEffect} from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import {
   View,
   Text,
@@ -20,22 +20,22 @@ import moment from 'moment';
 import PushNotificationIOS from '@react-native-community/push-notification-ios';
 import Hyperlink from 'react-native-hyperlink';
 //global
-import {Colors, Constant, Fonts, ScreenNames, Server} from '../../global';
+import { Colors, Constant, Fonts, ScreenNames, Server } from '../../global';
 //styles
-import {styles} from './AdminChatNowStyle';
+import { styles } from './AdminChatNowStyle';
 //svg
 import AttachSvg from '../../assets/svg/attach.svg';
 import SendSvg from '../../assets/svg/submit-arrow.svg';
 //firebase
 import firestore from '@react-native-firebase/firestore';
 //redux
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 //custom hooks
-import {useKeyboard} from '../../hooks/isKeyBoardOpen';
+import { useKeyboard } from '../../hooks/isKeyBoardOpen';
 //modal
 import Attachment from '../../components/modal/Attachment/Attachment';
 
-const AdminChatNow = ({route, userToken, navigation}) => {
+const AdminChatNow = ({ route, userToken, navigation }) => {
   //variables : route variables
   const name = route.params.name;
   const ImageUrl = route.params.ImageUrl;
@@ -56,7 +56,7 @@ const AdminChatNow = ({route, userToken, navigation}) => {
   const [showLoader, setshowLoader] = useState(false);
   //function : navigation function
   const gotoFullImageView = image => {
-    navigation?.navigate(ScreenNames.FULL_IMAGE_VIEW, {image: image});
+    navigation?.navigate(ScreenNames.FULL_IMAGE_VIEW, { image: image });
   };
   const gotoPdfView = image =>
     navigation.navigate(ScreenNames.VIEW_PDF, {
@@ -75,6 +75,8 @@ const AdminChatNow = ({route, userToken, navigation}) => {
       const data = {
         receiver_id: userId,
       };
+      console.log('resetChatCount',Server.READ_MSG, {data});
+      
       await Server.postApiWithToken(userToken, Server.READ_MSG, data);
     } catch (error) {
       console.log('error in resetChatCount', error);
@@ -94,7 +96,7 @@ const AdminChatNow = ({route, userToken, navigation}) => {
             .collection('Chat')
             .doc(adminId.toString() + userId.toString())
             .collection('Messages')
-            .add({...Data, createdAt: firestore.FieldValue.serverTimestamp()});
+            .add({ ...Data, createdAt: firestore.FieldValue.serverTimestamp() });
           const TempMsg = message;
           setmessage('');
           try {
@@ -102,7 +104,10 @@ const AdminChatNow = ({route, userToken, navigation}) => {
               receiver_id: userId,
               msg: TempMsg,
             };
-            await Server.postApiWithToken(userToken, Server.SEND_MSG, data);
+            console.log("SEND_MSG", data);
+
+            const res = await Server.postApiWithToken(userToken, Server.SEND_MSG, data);
+            console.log("SEND_MSG res", res);
           } catch (error) {
             console.log('error while api call', error);
           }
@@ -169,7 +174,7 @@ const AdminChatNow = ({route, userToken, navigation}) => {
   };
 
   // function : render function
-  const chatRenderFunction = ({item}) => (
+  const chatRenderFunction = ({ item }) => (
     <View
       key={item.id}
       style={{
@@ -208,7 +213,7 @@ const AdminChatNow = ({route, userToken, navigation}) => {
         ) : null}
         {item.message ? (
           <Hyperlink
-            linkStyle={{color: '#0000FF'}}
+            linkStyle={{ color: '#0000FF' }}
             onPress={(url, text) => Linking.openURL(url)}>
             <Text
               style={{
@@ -276,7 +281,7 @@ const AdminChatNow = ({route, userToken, navigation}) => {
         }
       });
     }
-    return () => {};
+    return () => { };
   }, []);
   //UI
   return (
@@ -326,7 +331,7 @@ const AdminChatNow = ({route, userToken, navigation}) => {
               style={styles.textInput}
             />
             <ActivityIndicator
-              style={{position: 'absolute', right: Constant.windowWidth / 2}}
+              style={{ position: 'absolute', right: Constant.windowWidth / 2 }}
               animating={showLoader}
               size="large"
               color="#f39322"

@@ -130,7 +130,7 @@ const CustomDrawer = ({navigation, dispatch, userToken, chatCount}) => {
   return (
     <View style={styles.container}>
       <CustomAlert />
-      <StatusBar backgroundColor={Colors.ORANGE} />
+      {/* <StatusBar backgroundColor={Colors.ORANGE} /> */}
       <ScrollView>
         <View style={styles.profileSectionView}>
           {userInfo.profile_image ? (
